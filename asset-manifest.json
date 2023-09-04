@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/opust-best/static/css/main.453c2286.css",
+    "main.js": "/opust-best/static/js/main.765b8883.js",
+    "static/js/787.17c293f6.chunk.js": "/opust-best/static/js/787.17c293f6.chunk.js",
+    "static/media/login.webp": "/opust-best/static/media/login.20e44600cace2954dfe3.webp",
+    "static/media/1.webp": "/opust-best/static/media/1.af8061a430d0e34bc04b.webp",
+    "static/media/3.webp": "/opust-best/static/media/3.fb2cf4f842410623d9b9.webp",
+    "static/media/Author_of_Week.webp": "/opust-best/static/media/Author_of_Week.62e40285bfb34e45eb81.webp",
+    "static/media/4.webp": "/opust-best/static/media/4.dec54b415503628fb20f.webp",
+    "static/media/2.webp": "/opust-best/static/media/2.efa13e80d2957d92998c.webp",
+    "static/media/registration.webp": "/opust-best/static/media/registration.7b4d8e4f69ed9f345763.webp",
+    "static/media/12.webp": "/opust-best/static/media/12.dec54b415503628fb20f.webp",
+    "static/media/11.webp": "/opust-best/static/media/11.fb2cf4f842410623d9b9.webp",
+    "static/media/15.webp": "/opust-best/static/media/15.8a7e505bf31a45517418.webp",
+    "static/media/18.webp": "/opust-best/static/media/18.8a7e505bf31a45517418.webp",
+    "static/media/6.webp": "/opust-best/static/media/6.efa13e80d2957d92998c.webp",
+    "static/media/9.webp": "/opust-best/static/media/9.af8061a430d0e34bc04b.webp",
+    "static/media/7.webp": "/opust-best/static/media/7.757918374a6953c13f45.webp",
+    "static/media/10.webp": "/opust-best/static/media/10.efa13e80d2957d92998c.webp",
+    "static/media/13.webp": "/opust-best/static/media/13.757918374a6953c13f45.webp",
+    "static/media/14.webp": "/opust-best/static/media/14.757918374a6953c13f45.webp",
+    "static/media/16.webp": "/opust-best/static/media/16.757918374a6953c13f45.webp",
+    "static/media/17.webp": "/opust-best/static/media/17.757918374a6953c13f45.webp",
+    "static/media/5.webp": "/opust-best/static/media/5.af8061a430d0e34bc04b.webp",
+    "static/media/8.webp": "/opust-best/static/media/8.dec54b415503628fb20f.webp",
+    "static/media/payment.webp": "/opust-best/static/media/payment.8438a1c569078e698341.webp",
+    "static/media/opus-logo.svg": "/opust-best/static/media/opus-logo.74f37e4ccd9311434b0cccdab6feaa7c.svg",
+    "index.html": "/opust-best/index.html",
+    "main.453c2286.css.map": "/opust-best/static/css/main.453c2286.css.map",
+    "main.765b8883.js.map": "/opust-best/static/js/main.765b8883.js.map",
+    "787.17c293f6.chunk.js.map": "/opust-best/static/js/787.17c293f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.453c2286.css",
+    "static/js/main.765b8883.js"
+  ]
+}
