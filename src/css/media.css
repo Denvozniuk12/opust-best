@@ -1,0 +1,245 @@
+@media (max-width: 1200px) {
+    /* FOOTER */
+    .footer-body {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .footer-bottom {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        grid-template-areas:
+            "item"
+            "links";
+    }
+
+    /* BLOG PAGE */
+    .blog-page-body-content {
+        grid-template-columns: repeat(2,minmax(330px,1fr));
+    }
+}
+
+@media (max-width: 1023px) {
+    .lg-block {
+        display: block;
+    }
+
+    .lg-w-full {
+        width: 100%;
+    }
+    /* HEADER */
+    .logo {
+        height: 2.75rem;
+        width: 8rem;
+    }
+
+    .navigation {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .btn-shopping-cart-img-span {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .menu-btn {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .menu-btn-span {
+        font-size: inherit;
+    }
+
+    /* FIRST SECTION */
+    .month-div-img {
+        width: 20%;
+        padding-bottom: 29%;
+    }
+
+    /* SECOND SECTION */
+    .best-author, .best-books-block {
+        width: 100%;
+    }
+
+    /* REGISTRATION PAGE */
+    .registration-img-wrap {
+        height: 500px;
+    }
+
+    /* LOGIN PAGE */
+    .login-img-wrap {
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .staticHeight {
+        height: 190px;
+    }
+
+    .md-w-full {
+        width: 100%;
+    }
+
+    /* HEADER */
+    .search-div {
+        display: none;
+    }
+
+    .btn-language {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        border-width: 1px;
+    }
+
+    /* HOME SEARCH */
+    .home-search {
+        display: block;
+    }
+
+    /* FIRST SECTION */
+    .month-text {
+        width: 80%;
+    }
+
+    /* FOOTER */
+    .footer-body {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+    /* REGISTRATION PAGE */
+    .registration-img-wrap {
+        margin: 0;
+        flex-basis: 0px;
+    }
+
+    .registration-page-h1, .login-page-h1 {
+        text-align: center;
+    }
+
+    /* LOGIN PAGE */
+    .login-img-wrap {
+        margin: 0;
+        flex-basis: 0px;
+    }
+
+    .login-form-wrap, .lost-password-wrap {
+        flex-basis: 100%;
+    }
+
+    /* BLOG PAGE */
+    .blog-page-header {
+        display: block;
+    }
+
+    .blog-page-body-content {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+}
+
+@media (max-width: 639px) {
+    .h2 {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .sm-text-sm {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }    
+
+    /* HEADER */
+    .logo-href {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem
+    }
+
+    /* FIRST SECTION */
+    .slider-slide {
+        padding: 2rem;
+    }
+
+    .slider-slide-h2 {
+        font-size: 23px;
+    }
+
+    .month-div-img {
+        width: 40%;
+        padding-bottom: 50%;
+    }
+
+    .month-text {
+        width: 60%;
+    }
+
+    .month-p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /* BLOG SECTION */
+    .blog-head-h2 {
+        font-size: 19px;
+    }
+
+    /* REGISTRATION PAGE */
+    .registration-page-h1, .login-page-h1 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    /* BLOG PAGE */
+    .blog-page-h2 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .registration-form-item-label, .login-form-item-label {
+        flex: 0 0 100%;
+    }
+
+    .registration-form-item-control, .login-form-item-control {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    /* HEADER */
+    .wrap-header {
+        flex-wrap: wrap;
+        height: 180px;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+    .navigation {
+        padding: 1rem 5px;
+    }
+
+    .btn-language {
+        font-size: 1.5rem;
+    }
+
+    .btn-auth-span {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .btn-shopping-cart-img-span {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .menu-btn {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .month-div-img {
+        padding-bottom: 100%;
+    }
+}
