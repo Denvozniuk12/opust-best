@@ -4,7 +4,9 @@ import Context from '../Context';
 import LostPasswordPageBody from '../Components/LostPasswordPage/LostPasswordPageBody';
 import imageLogin from '../Img/LoginPage/login.webp';
 
-function LostPassword() {
+function LostPassword(props) {
+  const { title } = props;
+  document.title = title;
   const value = useContext(Context);
     useEffect(() => {
       value.wrap.current.setAttribute('style', 'background-color: rgb(217, 214, 222)');

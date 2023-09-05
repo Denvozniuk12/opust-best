@@ -4,7 +4,9 @@ import Context from '../Context';
 import RegistrationPageForm from '../Components/RegistrationPage/RegistrationPageForm';
 import imageRegistration from '../Img/RegistrationPage/registration.webp';
 
-function Registration() {
+function Registration(props) {
+  const { title } = props;
+  document.title = title;
   const value = useContext(Context);
   useEffect(() => {
     value.wrap.current.setAttribute('style', 'background-color: rgb(227, 246, 253)');

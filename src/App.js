@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect, useRef, useLayoutEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Context from './Context';
@@ -15,7 +15,6 @@ import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import Blog from './Pages/Blog';
 import LostPassword from './Pages/LostPassword';
-import NotFound from './Pages/NotFound';
 
 
 function App() {
@@ -83,18 +82,17 @@ function App() {
   };
 
   return (
-    <Router /*basename={`/${basePath(language)}`}*/>
+    <Router /*basename="/opust-best"*/ /*basename={`/${basePath(language)}`}*/>
       <Context.Provider value={value}>
         <div ref={wrap}>
           <div className='w-full mx-auto' style={{maxWidth: '1700px'}}>
             <Header />
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/registration' element={<Registration />} />
-              <Route path='/blog' element={<Blog />} />
-              <Route path='/lostpassword' element={<LostPassword />} />
-              {/* <Route path='*' element={<NotFound />} /> */}
+              <Route path='/' element={<Home title={"Opus-Best Main"} />} />
+              <Route path='/login' element={<Login title={"Login"} />} />
+              <Route path='/registration' element={<Registration title={"Registration"} />} />
+              <Route path='/blog' element={<Blog title={"Opus-Best Blog"} />} />
+              <Route path='/lostpassword' element={<LostPassword title={"Lost Password"} />} />
             </Routes>
           </div>
           <Footer />

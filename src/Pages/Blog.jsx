@@ -4,7 +4,9 @@ import Context from '../Context';
 import BlogPageHeader from '../Components/BlogPage/BlogPageHeader';
 import BlogPageBody from '../Components/BlogPage/BlogPageBody';
 
-function Blog() {
+function Blog(props) {
+    const { title } = props;
+    document.title = title;
     const value = useContext(Context);
     useEffect(() => {
         value.wrap.current.setAttribute('style', 'background-color: #D9E6E3');

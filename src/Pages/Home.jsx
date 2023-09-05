@@ -6,7 +6,9 @@ import SecondSection from "../Components/SecondSection/SecondSection";
 import BlogSection from "../Components/BlogSection/BlogSection";
 import Search from "../Components/Search";
 
-function Home() {
+function Home(props) {
+  const { title } = props;
+  document.title = title;
   const value = useContext(Context);
     useEffect(() => {
       if(value.wrap.current.hasAttribute('style')){
