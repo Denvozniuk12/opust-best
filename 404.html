@@ -5,7 +5,9 @@
     <meta http-equiv="refresh" content="0;url=/opust-best" />
     <script>
       var currentPath = window.location.pathname;
-      window.location.href = currentPath;
+      if (currentPath !== '/opust-best/') {
+        window.location.href = currentPath;
+      }
     </script>
   </head>
   <body>
