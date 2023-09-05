@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/opust-best/static/css/main.453c2286.css",
-    "main.js": "/opust-best/static/js/main.667c02c3.js",
+    "main.js": "/opust-best/static/js/main.c49f25a7.js",
     "static/js/787.57653138.chunk.js": "/opust-best/static/js/787.57653138.chunk.js",
     "static/media/login.webp": "/opust-best/static/media/login.20e44600cace2954dfe3.webp",
     "static/media/1.webp": "/opust-best/static/media/1.af8061a430d0e34bc04b.webp",
@@ -28,11 +28,11 @@
     "static/media/opus-logo.svg": "/opust-best/static/media/opus-logo.74f37e4ccd9311434b0cccdab6feaa7c.svg",
     "index.html": "/opust-best/index.html",
     "main.453c2286.css.map": "/opust-best/static/css/main.453c2286.css.map",
-    "main.667c02c3.js.map": "/opust-best/static/js/main.667c02c3.js.map",
+    "main.c49f25a7.js.map": "/opust-best/static/js/main.c49f25a7.js.map",
     "787.57653138.chunk.js.map": "/opust-best/static/js/787.57653138.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.453c2286.css",
-    "static/js/main.667c02c3.js"
+    "static/js/main.c49f25a7.js"
   ]
 }
