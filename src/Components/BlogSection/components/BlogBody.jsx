@@ -1,30 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import MySwiper from '../../SwiperComponent';
-import { BlogSlider } from '../../Slides';
+import Slides from '../../Slides';
+import BlogSectionData from "./Data";
+import useScreenResize from '../../../Hooks/useScreenResize';
 
 function BlogBody() {
+    const { BlogSlider } = Slides();
     const blogSlider = BlogSlider();
-    const [slPerView, setSlPerView] = useState(6);
-
+    const { initialState, blogBodyData } = BlogSectionData();
+    const { slPerView, handleScreenWidthResizeForSlides } = useScreenResize(initialState);
     useEffect(() => {
-        function handleResize() {
-            const screenWidth = window.innerWidth;
-            if (screenWidth < 768) {
-                setSlPerView(1);
-            } else if (screenWidth < 1024) {
-                setSlPerView(2);
-            } else if (screenWidth < 1224) {
-                setSlPerView(4);
-            } else {
-                setSlPerView(6);
-            }
-        }
-
-        handleResize(); // Call once to set initial value
-        window.addEventListener('resize', handleResize);
-
+        handleScreenWidthResizeForSlides(blogBodyData);
+        window.addEventListener('resize', function() {
+            handleScreenWidthResizeForSlides(blogBodyData);
+        });
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', function() {
+                handleScreenWidthResizeForSlides(blogBodyData);
+            });
         };
     }, []);
     return (

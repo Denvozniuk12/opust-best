@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import imageFooterPayment from '../../../Img/Footer/FooterBody/payment.webp';
+import { imgFooterPayment } from '../../../Img/Footer/FooterBody';
 
 function FooterBody() {
     const { t } = useTranslation();
@@ -76,7 +76,7 @@ function FooterBody() {
                         minHeight: '100%',
                         maxHeight: '100%'
                     }}
-                    src={imageFooterPayment} alt="Payment System" />
+                    src={imgFooterPayment} alt="Payment System" />
                 </span>
             </div>
             <div className='footer-body-card'>

@@ -1,31 +1,17 @@
 import React from "react";
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import useEmailChange from "./hooks/useEmailChange";
+import useSubmit from "./hooks/useSubmit";
+import useEmailErrors from "./hooks/useEmailErrors";
 
 function LostPasswordPageBody() {
     const { t } = useTranslation();
     const [email, setEmail] = useState('');
     const [emailError, setEmailError] = useState('');
-    const [emailFocused, setEmailFocused] = useState(false);
-
-    const handleEmailChange = (event) => {
-        const value = event.target.value;
-        setEmail(value);
-        setEmailError('');
-    };
-    
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        if (!email) {
-            setEmailError(t('Required'));
-        }
-        else {
-            window.location.href = '/login';
-        }
-    };
-
+    const { handleEmailChange } = useEmailChange(setEmail, setEmailError);
+    const { handleSubmit } = useSubmit(email, setEmailError);
+    const { handleEmailErrors } = useEmailErrors(email, setEmailError);
     return (
         <div className='lost-password-wrap'>
             <div className='login-form-body'>
@@ -50,16 +36,7 @@ function LostPasswordPageBody() {
                                             type="text"
                                             placeholder={t('Username or Email Address')}
                                             value={email}
-                                            onFocus={() => setEmailFocused(true)}
-                                            onBlur={() => {
-                                                setEmailFocused(false);
-                                                if (!email) {
-                                                    setEmailError(t('Required'));
-                                                } 
-                                                else {
-                                                    setEmailError('');
-                                                }
-                                            }}
+                                            onBlur={handleEmailErrors}
                                             onChange={handleEmailChange}
                                         />
                                         {emailError && (

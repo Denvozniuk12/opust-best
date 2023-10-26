@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { BlogSlider } from '../Slides';
+import Slides from '../Slides';
 
 function BlogPageBody() {
+    const { BlogSlider } = Slides();
     const blogSlider = BlogSlider();
     return (
             <div className='wrap'>

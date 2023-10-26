@@ -1,10 +1,8 @@
 import React from 'react';
-import { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import Context from './Context';
-import { removeLngPrefix } from './i18n';
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ArrowUp from './Components/ArrowUp';
@@ -18,29 +16,14 @@ import LostPassword from './Pages/LostPassword';
 
 
 function App() {
-  const { t, i18n: { language } } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const [beforeShowMenu, setBeforeShowMenu] = useState(false);
   const [showHeaderSearch, setShowHeaderSearch] = useState(true);
   const wrap = useRef();
   const [firstSetMenuItems, setFirstMenuItems] = useState(false);
 
-  // useLayoutEffect(() => {
-  //   const currentPathName = window.location.pathname;
-  //   const newPathname1 = language === "en" ? "" : `/${language}`;
-  //   const newPathName2 = `${newPathname1}${removeLngPrefix(currentPathName)}`;
-
-  //   if(currentPathName !== newPathName2){
-  //     window.location.replace(newPathName2);
-  //   }
-  // }, []);
-
   const settingInitialMenuItemsFinish = () => {
     setFirstMenuItems(true);
-  }
-
-  const basePath = (lng) => {
-    return lng === "en" ? "" : `${lng}`;
   }
 
   const menu = (val) => {
@@ -82,7 +65,7 @@ function App() {
   };
 
   return (
-    <Router /*basename="/opust-best"*/ /*basename={`/${basePath(language)}`}*/>
+    <Router>
       <Context.Provider value={value}>
         <div ref={wrap}>
           <div className='w-full mx-auto' style={{maxWidth: '1700px'}}>

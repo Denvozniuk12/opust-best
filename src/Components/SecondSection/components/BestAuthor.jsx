@@ -1,15 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import imageSecondSectionBestAuthorAuthorOfWeek from '../../../Img/SecondSection/BestAuthor/Author_of_Week.webp';
+import { imageSecondSectionBestAuthorAuthorOfWeek } from '../../../Img/SecondSection/BestAuthor';
+import { facebookBtnSvg } from '../../../Img/SecondSection/BestAuthor';
 
 function BestAuthor() {
     const { t } = useTranslation();
-    const facebookBtnSvg = (
-        <svg viewBox="0 0 64 64" width="40" height="40">
-            <rect width="64" height="64" rx="0" ry="0" fill="#3b5998"></rect>
-            <path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path>
-        </svg>
-    );
     return(
         <div className='best-author'>
             <h2 className='h2 best-author-h2'>{t('Best Author')}</h2>

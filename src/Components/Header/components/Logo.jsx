@@ -1,5 +1,5 @@
 import React from 'react';
-import imageHeaderLogo from '../../../Img/Header/opus-logo.svg';
+import {imageHeaderLogo} from '../../../Img/Header';
 import { Link } from 'react-router-dom';
 
 function Logo() {
